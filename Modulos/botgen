@@ -16,6 +16,6 @@
             }  
     clear && echo "◇ BOT ACTIVATED!"
 } || {
-    screen -r -y "bot_gen" -X quit
+    screen -r -S "bot_gen" -X quit
     clear && echo "◇ BOT DISABLED!"
 }
