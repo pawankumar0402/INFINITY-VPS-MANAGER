@@ -12,7 +12,7 @@ SCOLOR='\033[0m'
 echo -e "${CORTITLE}☯ㅤINFINITY VPS MANAGER SLOW DNS (Beta)ㅤ☯${SCOLOR}"
 installslowdns() {
     echo -e "\n${YELLOW}BE AWARE THAT THIS METHOD IS STILL IN THE BETA PHASE AND THAT BEYOND BEING SLOW IT MAY NOT WORK PERFECTLY ! ${SCOLOR}\n"
-    echo -ne "${GREEN}DO YOU WANT TO CONTINUE THE INSTALLATION? ${YELLOW}[s/n]:${SCOLOR} "
+    echo -ne "${GREEN}DO YOU WANT TO CONTINUE THE INSTALLATION? ${YELLOW}[y/n]:${SCOLOR} "
     read resp
     [[ "$resp" != @(s|sim|S|SIM) ]] && {
 	    echo -e "\n${RED}Returning...${SCOLOR}"
