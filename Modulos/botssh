@@ -92,7 +92,7 @@ fun_instbot() {
     echo -e "\033[0;34m◇────────────────────────────────────────────────◇\033[1;32m"
     echo ""
     read -p "◇ DO YOU WISH TO CONTINUE ? [y/n]: " -e -i y resposta
-    [[ "$resposta" = 's' ]] && {
+    [[ "$resposta" = 'y' ]] && {
         fun_botOnOff
     } || {
         echo -e "\n\033[1;31m◇ Returning...\033[0m"
