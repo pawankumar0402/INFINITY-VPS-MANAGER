@@ -31,7 +31,7 @@ else
 	echo "to reduce latency and improve speed."
 	echo ""
 	read -p "Proceed with installation? [y/n]: " -e -i n resposta
-	if [[ "$resposta" = 's' ]]; then
+	if [[ "$resposta" = 'y' ]]; then
 	echo ""
 	echo "Modifying the following settings:"
 	echo " " >> /etc/sysctl.conf
