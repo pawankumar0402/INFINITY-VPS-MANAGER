@@ -5,7 +5,7 @@ then
 	echo ""
 	echo "TCP Tweaker network settings have already been added to the system!"
 	echo ""
-	read -p "Do you want to remove TCP Tweaker settings? [s/n]: " -e -i n resposta0
+	read -p "Do you want to remove TCP Tweaker settings? [y/n]: " -e -i n resposta0
 	if [[ "$resposta0" = 's' ]]; then
 		grep -v "^#PH56
 net.ipv4.tcp_window_scaling = 1
@@ -30,7 +30,7 @@ else
 	echo "This script will change some network settings"
 	echo "to reduce latency and improve speed."
 	echo ""
-	read -p "Proceed with installation? [s/n]: " -e -i n resposta
+	read -p "Proceed with installation? [y/n]: " -e -i n resposta
 	if [[ "$resposta" = 's' ]]; then
 	echo ""
 	echo "Modifying the following settings:"
