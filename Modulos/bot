@@ -463,7 +463,7 @@ ver_users() {
                         data="Venceu"
                     } || {
                         dat="$(date -d"$datauser" '+%Y-%m-%d')"
-                        data=$(echo -e "$((($(date -ud $dat +%s) - $(date -ud $(date +%Y-%m-%d) +%s)) / 86400)) DIAS")
+                        data=$(echo -e "$((($(date -ud $dat +%s) - $(date -ud $(date +%Y-%m-%d) +%s)) / 86400)) DAYS")
                     }
                 }
                 info+="$user • $senha • $limite • $data"
@@ -515,7 +515,7 @@ ver_users() {
                         data="Venceu"
                     } || {
                         dat="$(date -d"$datauser" '+%Y-%m-%d')"
-                        data=$(echo -e "$((($(date -ud $dat +%s) - $(date -ud $(date +%Y-%m-%d) +%s)) / 86400)) DIAS")
+                        data=$(echo -e "$((($(date -ud $dat +%s) - $(date -ud $(date +%Y-%m-%d) +%s)) / 86400)) DAYS")
                     }
                 }
                 info+="$user • $senha • $limite • $data"
